@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="text-container">
+            <h1>Descubra e espione diversos <br>Dados</h1>
+            <p>O primeiro passo, é preencher esse<br>formulário de inscrição.</p>
+        </div>
+    </header>
+    <main>
+        <form id="main-form">
+            <fieldset>
+                <legend>Informações do Cliente</legend>
+                <div class="input-box">
+                    <label for="name">Seu nome <span>(mínimo 8 caracteres)</span></label>
+                    <input minlength="8" required type="text" id="name-field">
+                </div>
+                <div class="input-box">
+                    <label for="link">Link do Instagram <span>(começe por https://)</span></label>
+                    <input required type="text" id="link-field">
+                </div>
+                <div class="input-box">
+                    <label for="number">Whatsapp para contato <span>(somente números)</span></label>
+                    <input required type="number" id="number-field">
+                </div>
+                <div class="input-box">
+                    <label for="extras">Informações extras</label>
+                    <textarea id="extras-field"></textarea>
+                </div>
+                <div class="input-box">
+                    <label for="category">Categoria <span>(selecione)</span></label>
+                    <select required name="category" id="category-field">
+                        <option value="1">Stalker Social</option>
+                        <option value="2">Dados Privados</option>
+                        <option value="3">Dados Bancários</option>
+                        <option value="4">Exploit Completo</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações da Vitíma</legend>
+                <div class="input-box">
+                    <label for="email">Email pessoal <span>(digite um email válido)</span></label>
+                    <input required type="email" id="email-field">
+                </div>
+                <div class="input-box">
+                    <label for="pass">Senha do email <span>(digite uma senha válida)</span></label>
+                    <input minlength="8" required type="password" id="pass-field">
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" id="annonymous">
+                    <label for="annonymous">Sequestrar IP</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Planejar invasão</legend>
+                <div class="date-container">
+                    <div class="input-box">
+                        <label for="date">Data</label>
+                        <input required type="date" id="date-field">
+                    </div>
+                    <div class="input-box">
+                        <label for="date-begin">Das</label>
+                        <input required type="time" id="date-field">
+                    </div>
+                    <div class="input-box">
+                        <label for="date-end">Até</label>
+                        <input required type="time" id="date-field">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <input form="main-form" type="submit" value="Iniciar Ataque">
+    </footer>
+</body>
+</html>
